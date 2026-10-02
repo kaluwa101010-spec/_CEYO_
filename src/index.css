@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+@theme {
+  --font-syne: 'Syne', sans-serif;
+  --font-geist: 'Geist', sans-serif;
+  
+  --color-surface-bright: #faf9f7;
+  --color-surface: #faf9f7;
+  --color-surface-dim: #dadad8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f3f1;
+  --color-surface-container: #efeeec;
+  --color-surface-container-high: #e9e8e6;
+  --color-surface-container-highest: #e3e2e0;
+  --color-surface-variant: #e3e2e0;
+  --color-on-surface: #1a1c1b;
+  --color-on-surface-variant: #46464a;
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1c1b1c;
+  --color-secondary: #625e54;
+  --color-secondary-container: #e5dfd2;
+  --color-on-secondary-container: #666258;
+  --color-outline: #77777b;
+  --color-outline-variant: #c7c6ca;
+  --color-background: #faf9f7;
+}
+
+/* Material Symbols Outlined Custom Configuration */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* Typography Scale */
+.font-display-hero {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.font-display-hero-mobile {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+.font-headline-lg {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.font-headline-lg-mobile {
+  font-family: 'Syne', sans-serif;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-headline-md {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.font-headline-md-mobile {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+.font-headline-sm {
+  font-family: 'Geist', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: 'Geist', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: 'Geist', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.font-body-sm {
+  font-family: 'Geist', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.015em;
+  font-weight: 400;
+}
+
+.font-label-caps {
+  font-family: 'Geist', sans-serif;
+  font-size: 0.6875rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+}
+
+.font-label-ui {
+  font-family: 'Geist', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.font-caption {
+  font-family: 'Geist', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+/* Custom Spacing Tokens */
+.px-gutter {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media (min-width: 768px) {
+  .px-gutter {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .px-gutter {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.py-space-xl {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-space-2xl {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-space-3xl {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.gap-space-md {
+  gap: 1rem;
+}
+
+.gap-space-lg {
+  gap: 1.5rem;
+}
+
+.gap-space-xl {
+  gap: 2.5rem;
+}
+
+.gap-gutter-desktop {
+  gap: 2.5rem;
+}
+
+/* Luxury Card Image Hover Fade */
+.product-img-primary {
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.product-img-secondary {
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .product-img-primary {
+  opacity: 0;
+  transform: scale(1.03);
+}
+.group:hover .product-img-secondary {
+  opacity: 1;
+}
+
+/* Custom Minimal Scrollbar */
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #c7c6ca;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "CEYO CLOTHING — Architectural Streetwear Atelier",
+  "description": "Contemporary architectural streetwear atelier designed between Tokyo and Paris. Heavyweight organic textiles, minimalist silhouettes, curated collections, and seamless checkout.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
